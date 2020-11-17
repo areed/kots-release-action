@@ -1,0 +1,17 @@
+name: test
+on: push
+
+jobs:
+  create_release:
+    runs-on: ubuntu-latest
+    name: Create a Replicated KOTS release for this commit
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Create the release
+      id: test-action
+      uses: replicatedhq/action-kots-release@v0.2.0
+      with:
+        replicated-app: kots-release-action
+        replicated-api-token: ${{ secrets.REPLICATED_API_TOKEN }}
+        yaml-dir: upload
