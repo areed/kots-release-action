@@ -15,4 +15,4 @@ jobs:
         replicated-app: kots-release-action
         replicated-api-token: ${{ secrets.REPLICATED_TOKEN }}
         yaml-dir: upload
-        release-notes: '"GitHub Action release of ${GITHUB_REF} triggered by ${GITHUB_ACTOR}: [${GITHUB_SHA::7}](https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA})"'
+        release-notes: 'GitHub Action release of ${GITHUB_REF} triggered by ${GITHUB_ACTOR}: [${GITHUB_SHA::7}](https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA})'
