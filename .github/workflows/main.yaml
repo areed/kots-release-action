@@ -10,7 +10,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Create the release
       id: test-action
-      uses: replicatedhq/action-kots-release@v0.2.0
+      uses: replicatedhq/action-kots-release@master
       with:
         replicated-app: kots-release-action
         replicated-api-token: ${{ secrets.REPLICATED_TOKEN }}
