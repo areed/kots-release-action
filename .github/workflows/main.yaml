@@ -13,5 +13,5 @@ jobs:
       uses: replicatedhq/action-kots-release@v0.2.0
       with:
         replicated-app: kots-release-action
-        replicated-api-token: ${{ secrets.REPLICATED_API_TOKEN }}
+        replicated-api-token: ${{ secrets.REPLICATED_TOKEN }}
         yaml-dir: upload
