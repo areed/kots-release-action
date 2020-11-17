@@ -15,3 +15,4 @@ jobs:
         replicated-app: kots-release-action
         replicated-api-token: ${{ secrets.REPLICATED_TOKEN }}
         yaml-dir: upload
+        release-notes: this should work fine
