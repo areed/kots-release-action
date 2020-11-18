@@ -10,9 +10,9 @@ jobs:
       uses: actions/checkout@v1
     - name: Create the release
       id: test-action
-      uses: replicatedhq/action-kots-release@master
+      uses: replicatedhq/action-kots-release@v0.5.0
       with:
         replicated-app: kots-release-action
         replicated-api-token: ${{ secrets.REPLICATED_TOKEN }}
-        yaml-dir: upload
-        release-notes: 'GitHub Action release of ${GITHUB_REF} triggered by ${GITHUB_ACTOR}: [${GITHUB_SHA::7}](https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA})'
+        yaml-dir: ./upload
+        promote-channel: "Stable"
